@@ -1,0 +1,27 @@
+.card{
+    filter: grayscale(100%);
+    transition: 0.3s ease-in;
+}
+.card:is(:hover, :focus){
+    filter: grayscale(0%);
+}
+.card{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.582)  ;
+    margin-top: 10px;
+}
+.card-body{
+    background-color: rgba(250, 128, 114, 0.137);
+}
+.card-text{
+    color:salmon 
+}
+.card{
+    overflow: hidden;
+}
+.card-img-top{
+  
+    transition: .4s ease;
+}
+.card-img-top:hover{
+  transform:scale(120%) ;
+}

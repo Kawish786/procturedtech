@@ -1,0 +1,59 @@
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+    border: none;
+    width: 30rem;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.774); 
+    /* opacity: 1; */
+    text-align: center;
+   background-color: rgba(0, 0, 0, 0.678);;
+   
+}
+.text-light{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+#name,#email,#message{
+    
+    margin: 10px;
+    margin-left: 20px;
+    max-width: 20rem;
+    align-self: center;
+}
+textarea{
+    resize: none;
+    
+}
+label{
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+h3{
+    margin-top: 5px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    margin-bottom: 20px;
+}
+#in{
+    color: transparent;
+    -webkit-text-stroke: 1px salmon;
+    padding-left: 0;
+    margin-top: 0;
+}

@@ -1,0 +1,60 @@
+.cover{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.719) ;
+   
+}
+.head{
+    
+        font-family: poppins, sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 1.2;
+        font-size: 30px;
+        color: white;
+        margin-top: 5rem;
+  
+}
+.head .subhead{
+    color: transparent;
+    -webkit-text-stroke: 1px salmon;
+}
+.mainpara{
+    color: whitesmoke;
+}
+.para{
+    color: salmon;
+}
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 15px;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+#image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(70%);
+    box-shadow:.6em.6em black;
+    position: relative;
+    object-fit: fill;
+}
+#name{
+    color: white;
+    margin-top: 2rem;
+    font-family: Lato, Helvetica, sans-serif;
+}
+#next{
+  
+    background-color: rgba(0, 0, 0, 0.719);
+    height: auto;
+}

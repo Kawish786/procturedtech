@@ -1,0 +1,53 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: white; */
+  
+    
+}
+h2{
+    color: salmon;
+    letter-spacing: 2px;
+   font-family: sans-serif;
+   cursor: pointer;
+}
+.navpart{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+li{
+    color: salmon;
+    margin: 15px;
+    cursor: pointer;
+}
+
+ul:hover > :not(:hover){
+    opacity: 0.2;
+    color: white;
+}
+button{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 2rem;
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid white;
+    outline-offset: -3px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    outline-offset: 2px;
+    outline: 2px solid salmon;
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid white;
+}

@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    width: 100%;
+   
+}
+.side{
+    display: flex;
+    width: 25%;
+    margin-left: 5px;
+  
+}
+.course{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+}
+#h{
+
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+/* Add this to your existing CSS */
+
+  
+  @media (max-width: 600px) {
+    .course {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+    .side{
+      
+      width: 100%;
+    }
+    
+      
+      
+  }
+  
