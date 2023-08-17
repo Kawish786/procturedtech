@@ -51,3 +51,25 @@ button:hover{
     color: whitesmoke;
     border: 1px solid white;
 }
+
+@media (max-width: 768px) {
+    .navpart ul {
+      display: none; /* Hide the menu items */
+      flex-direction: column; /* Stack items vertically */
+      position: absolute;
+      top: 4rem;
+      right: 1rem;
+      background-color: #333;
+      padding: 1rem;
+      border-radius: 0.2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navpart ul.active {
+      display: flex; /* Show the menu items when active class is added */
+    }
+  
+    .navpart button {
+      display: block;
+    }
+  }

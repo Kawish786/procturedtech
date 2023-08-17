@@ -32,6 +32,9 @@ function Nav() {
                 <li onClick={handleAbout}><MessagesSquare /> About</li>
                 <li onClick={handleContact}><SmartphoneNfc /> Contact</li>
             </ul>
+            <button onClick={toggleMobileMenu}>
+                <AlignJustify style={{ height: '15px' }} />
+            </button>
             <button>Login <LogIn style={{height:'15px'}}/></button>
         </div>
     </div>
