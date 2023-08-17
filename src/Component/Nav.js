@@ -25,10 +25,8 @@ function Nav() {
   return (
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
-        <input type='checkbox' id='toggler'/>
-        <AlignJustify htmlFor='toggler' className='label' />
         <div className='navpart'>
-            <ul className='list'>
+            <ul>
                 <li onClick={handleHome}><Home /> Home</li>
                 <li onClick={handleCourse}><GraduationCap /> Courses</li>
                 <li onClick={handleAbout}><MessagesSquare /> About</li>
