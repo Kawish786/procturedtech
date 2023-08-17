@@ -26,7 +26,7 @@ function Nav() {
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
         <input type='checkbox' id='toggler'/>
-        <AlignJustify htmlFor='toggler' className='label' />
+        <AlignJustify htmlFor='toggler' id='label' />
         <div className='navpart'>
             <ul className='list'>
                 <li onClick={handleHome}><Home /> Home</li>
