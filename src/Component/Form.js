@@ -20,105 +20,114 @@ function Form() {
 
     });
     const [selectedValue, setSelectedValue] = useState('');
+    const [subCourses, setSubCourses] = useState([]);
 
     const handleSelectChange = (event) => {
       setSelectedValue(event.target.value);
-      var courseSelect = document.getElementById("courseSelect");
-      var subCourseSelect = document.getElementById("subCourseSelect");
-      subCourseSelect.innerHTML = "";
-      var selectedCourse = courseSelect.value;
-
-      if (selectedCourse === "Finance") {
-        addSubCourseOption("Financial Accounting");
-        addSubCourseOption("Managerial Accounting");
-        addSubCourseOption("Corporate Finance");
-        addSubCourseOption("Investment Management");
-        addSubCourseOption("Financial Modeling");
-        addSubCourseOption("Behavioral Finance");
-    } else if (selectedCourse === "Entrepreneurship") {
-        addSubCourseOption("Business Plan Development");
-        addSubCourseOption("Startup Financing and Funding");
-        addSubCourseOption("Growth Hacking & Scaling a Startup");
-        addSubCourseOption("Technology and Entrepreneurship");
-        addSubCourseOption("Managing Business Risks");
-        addSubCourseOption("E-commerce and Online Business");
-    } else if (selectedCourse === "Communication") {
-        addSubCourseOption("Public Speaking");
-        addSubCourseOption("Business Communication");
-        addSubCourseOption("Interpersonal Communication");
-        addSubCourseOption("Cross-Cultural Communication");
-        addSubCourseOption("Communication for Leadership");
-        addSubCourseOption("Media and Communication");
-    } else if (selectedCourse === "Management") {
-        addSubCourseOption("Leadership Development");
-        addSubCourseOption("Organizational Behaviour");
-        addSubCourseOption("Marketing Management");
-        addSubCourseOption("Time Management");
-        addSubCourseOption("Crisis Management");
-        addSubCourseOption("Project Management");
-    } else if (selectedCourse === "Sales") {
-        addSubCourseOption("Consultative Selling");
-        addSubCourseOption("Relationship Selling");
-        addSubCourseOption("Sales Negotiation Skills");
-        addSubCourseOption("Solution Selling");
-        addSubCourseOption("Territory Management");
-        addSubCourseOption("Retail Sales Techniques");
-    } else if (selectedCourse === "Strategy") {
-        addSubCourseOption("Business Strategy");
-        addSubCourseOption("Corporate Strategy");
-        addSubCourseOption("Strategic Management");
-        addSubCourseOption("Competitive Strategy");
-        addSubCourseOption("Strategic Planning");
-        addSubCourseOption("Strategic Leadership");
-    } else if (selectedCourse === "Operations") {
-        addSubCourseOption("Operations Management");
-        addSubCourseOption("Logistics Management");
-        addSubCourseOption("Operations Strategy");
-        addSubCourseOption("Operations Analytics");
-        addSubCourseOption("Agile Operations");
-        addSubCourseOption("E-commerce Operations");
-    } else if (selectedCourse === "ProjectManager") {
-        addSubCourseOption("Project Procurement Management");
-        addSubCourseOption("Project Integration Management");
-        addSubCourseOption("Critical Path Method (CPM)");
-        addSubCourseOption("Change Management in Projects");
-        addSubCourseOption("Earned Value Management (EVM)");
-        addSubCourseOption("Risk Assessment and Mitigation");
-    } else if (selectedCourse === "BusinessLaw") {
-        addSubCourseOption("Intellectual Property Law");
-        addSubCourseOption("Securities Regulation");
-        addSubCourseOption("Tax Law and Business");
-        addSubCourseOption("Real Estate Law");
-        addSubCourseOption("Franchise Law");
-        addSubCourseOption("Legal Risk Management");
-    } else if (selectedCourse === "Data&Analytics") {
-        addSubCourseOption("Data Visualization");
-        addSubCourseOption("Statistical Analysis");
-        addSubCourseOption("Data Analysis with R");
-        addSubCourseOption("Data Mining");
-        addSubCourseOption("Big Data Analytics");
-        addSubCourseOption("Business Intelligence");
-    } else if (selectedCourse === "HomeBusiness") {
-        addSubCourseOption("Business Idea Generation");
-        addSubCourseOption("Business Plan Development");
-        addSubCourseOption("Marketing and Branding");
-        addSubCourseOption("Social Media Marketing");
-        addSubCourseOption("Home Business Photography");
-        addSubCourseOption("Dropshipping and E-commerce Fulfillment");
-    } else if (selectedCourse === "HumanResource") {
-        addSubCourseOption("Recruitment and Talent Acquisition");
-        addSubCourseOption("Performance Management");
-        addSubCourseOption("HR Strategy and Planning");
-        addSubCourseOption("HR Metrics and Analytics");
-        addSubCourseOption("HR Technology and Systems");
-        addSubCourseOption("Strategic Staffing");
-    }
-    function addSubCourseOption(subCourse) {
-      var option = document.createElement("option");
-      option.text = subCourse;
-      subCourseSelect.add(option);
-  }
+      setSubCourses(getSubCourses(event.target.value));
+      
     };
+    const getSubCourses = (selectedCourse)=>{
+      const subCoursesByCourse={
+        Finance: [
+          'Financial Accounting',
+          'Managerial Accounting',
+          'Corporate Finance',
+          'Investment Management',
+          'Financial Modeling',
+          'Behavioral Finance',
+        ],
+        Entrepreneurship: [
+          'Business Plan Development',
+          'Startup Financing and Funding',
+          'Growth Hacking & Scaling a Startup',
+          'Technology and Entrepreneurship',
+          'Managing Business Risks',
+          'E-commerce and Online Business',
+        ],
+        Communication: [
+          'Public Speaking',
+          'Business Communication',
+          'Interpersonal Communication',
+          'Cross-Cultural Communication',
+          'Communication for Leadership',
+          'Media and Communication',
+        ],
+        Management: [
+          "Leadership Development",
+          "Organizational Behaviour",
+          "Marketing Management",
+          "Time Management",
+          "Crisis Management",
+          "Project Management",
+        ],
+        Sales: [
+          "Consultative Selling",
+          "Relationship Selling",
+          "Sales Negotiation Skills",
+          "Solution Selling",
+          "Territory Management",
+          "Retail Sales Techniques",
+        ],
+        Strategy: [
+          "Business Strategy",
+          "Corporate Strategy",
+          "Strategic Management",
+          "Competitive Strategy",
+          "Strategic Planning",
+          "Strategic Leadership",
+        ],
+        Operations: [
+          "Operations Management",
+          "Logistics Management",
+          "Operations Strategy",
+          "Operations Analytics",
+          "Agile Operations",
+          "E-commerce Operations",
+        ],
+        ProjectManager: [
+          "Project Procurement Management",
+          "Project Integration Management",
+          "Critical Path Method (CPM)",
+          "Change Management in Projects",
+          "Earned Value Management (EVM)",
+          "Risk Assessment and Mitigation",
+        ],
+        BusinessLaw: [
+          "Intellectual Property Law",
+          "Securities Regulation",
+          "Tax Law and Business",
+          "Real Estate Law",
+          "Franchise Law",
+          "Legal Risk Management",
+        ],
+        DataAndAnalytics: [
+          "Data Visualization",
+          "Statistical Analysis",
+          "Data Analysis with R",
+          "Data Mining",
+          "Big Data Analytics",
+          "Business Intelligence",
+        ],
+        HomeBusiness: [
+          "Business Idea Generation",
+          "Business Plan Development",
+          "Marketing and Branding",
+          "Social Media Marketing",
+          "Home Business Photography",
+          "Dropshipping and E-commerce Fulfillment",
+        ],
+        HumanResource: [
+          "Recruitment and Talent Acquisition",
+          "Performance Management",
+          "HR Strategy and Planning",
+          "HR Metrics and Analytics",
+          "HR Technology and Systems",
+          "Strategic Staffing",
+        ],
+      };
+      return subCoursesByCourse[selectedCourse] || [];
+    }
     const handleInputChange=(e)=>{
         const { name, value } = e.target;
         setInputValues({ ...inputValues, [name]: value });
@@ -175,6 +184,11 @@ function Form() {
         </select> 
         <select id="subCourseSelect" className='select'>
             <option value="">Select a Sub-Course</option>
+            {subCourses.map((subCourse) => (
+            <option key={subCourse} value={subCourse}>
+              {subCourse}
+            </option>
+          ))}
         </select>
         </form>
     </div>
