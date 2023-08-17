@@ -25,7 +25,7 @@ function Nav() {
     nav('/about')
   }
   const toggleMobileMenu = () => {
-    setIsMobileMenuActive(!isMobileMenuActive);
+    setIsMobileMenuActive(isMobileMenuActive);
   };
   return (
     <div className='navbar'>
