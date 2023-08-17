@@ -6,6 +6,7 @@ import { MessagesSquare } from 'lucide-react'
 import { Home } from 'lucide-react'
 import { GraduationCap } from 'lucide-react'
 import { SmartphoneNfc } from 'lucide-react';
+import { AlignJustify } from 'lucide-react'
 
 function Nav() {
   const nav =useNavigate()
@@ -24,8 +25,10 @@ function Nav() {
   return (
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
+        <input type='checkbox' id='toggler'/>
+        <Label htmlFor='toggler'><AlignJustify /></Label>
         <div className='navpart'>
-            <ul>
+            <ul className='list'>
                 <li onClick={handleHome}><Home /> Home</li>
                 <li onClick={handleCourse}><GraduationCap /> Courses</li>
                 <li onClick={handleAbout}><MessagesSquare /> About</li>
