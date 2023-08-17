@@ -54,7 +54,7 @@ button:hover{
 
 
 /*        Responsive Nav         */
-#toggler, .navbar .label{
+#toggler, .navbar AlignJustify{
     display: none;
 }
 
@@ -69,7 +69,7 @@ button:hover{
         align-items: center;
         padding:20px ;
     }
-    .navbar .label{
+    .navbar AlignJustify{
         display: inline-flex;
         align-items: center;
         cursor: pointer;
