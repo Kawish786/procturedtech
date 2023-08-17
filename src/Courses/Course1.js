@@ -1,4 +1,5 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -15,6 +16,10 @@ function Course1() {
         >
           •
         </Box>);
+        const nav = useNavigate() 
+        const handleApply=()=>{
+          nav('/joinus')
+        }
   return (
     <>
     <div className='container'>
@@ -36,7 +41,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button className='bt' id='bt' size="small">Apply Now</Button>
+        <Button className='bt' id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
     <Card className='card' id='card'>
@@ -57,7 +62,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -80,7 +85,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -103,7 +108,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -126,7 +131,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -149,7 +154,7 @@ function Course1() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
