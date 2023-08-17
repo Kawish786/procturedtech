@@ -25,12 +25,12 @@ function Nav() {
     nav('/about')
   }
   const toggleMobileMenu = () => {
-    setIsMobileMenuActive(isMobileMenuActive);
+    setIsMobileMenuActive(!isMobileMenuActive);
   };
   return (
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
-        <div className='navpart'>
+        <div className={`navpart ${isMobileMenuActive ? 'active' : ''}`}>
             <ul>
                 <li onClick={handleHome}><Home /> Home</li>
                 <li onClick={handleCourse}><GraduationCap /> Courses</li>
