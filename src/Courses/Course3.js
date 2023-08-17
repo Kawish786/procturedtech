@@ -34,7 +34,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
     <Card id='card' sx={{ minWidth: 275 }}>
@@ -56,7 +56,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -79,7 +79,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -102,7 +102,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -125,7 +125,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -148,7 +148,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
+        <Button id='bt' size="small" onClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
