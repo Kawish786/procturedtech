@@ -12,6 +12,16 @@ h2{
    font-family: sans-serif;
    cursor: pointer;
 }
+.navpart ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navpart ul li {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
 .navpart{
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +41,7 @@ ul:hover > :not(:hover){
     opacity: 0.2;
     color: white;
 }
-button{
+.navbar button{
     margin-left: 20px;
     margin-top: 20px;
     height: 2rem;
