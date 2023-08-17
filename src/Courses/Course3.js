@@ -135,7 +135,7 @@ function Course3() {
           Course
         </Typography>
         <Typography style={{color:'salmon'}} id='typo' variant="h5" component="div">
-        Media and Communication Studies
+        Media and Communication
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
