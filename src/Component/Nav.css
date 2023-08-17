@@ -54,7 +54,7 @@ button:hover{
 
 
 /*        Responsive Nav         */
-#toggler, .navbar #label{
+#toggler, .navbar .label{
     display: none;
 }
 
@@ -69,13 +69,13 @@ button:hover{
         align-items: center;
         padding:20px ;
     }
-    .navbar #label{
+    .navbar .label{
         display: inline-flex;
         align-items: center;
         cursor: pointer;
     }
     
-    #toggler:checked ~ .navpart{
+    #toggler:checked ~ .list{
         max-height:100% ;
     }
     
