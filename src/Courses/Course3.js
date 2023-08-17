@@ -1,4 +1,5 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,6 +9,10 @@ import Typography from '@mui/material/Typography';
 import './Course1.css'
 
 function Course3() {
+  const nav = useNavigate() 
+        const handleApply=()=>{
+          nav('/joinus')
+        }
   return (
     <>
     <div className='container'>
@@ -20,7 +25,7 @@ function Course3() {
         Public Speaking
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -29,7 +34,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
     <Card id='card' sx={{ minWidth: 275 }}>
@@ -42,7 +47,7 @@ function Course3() {
            Business Communication 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -51,7 +56,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -65,7 +70,7 @@ function Course3() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -74,7 +79,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -88,7 +93,7 @@ function Course3() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -97,7 +102,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -111,7 +116,7 @@ function Course3() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -120,7 +125,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 
@@ -134,7 +139,7 @@ function Course3() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -143,7 +148,7 @@ function Course3() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button id='bt' size="small">Apply Now</Button>
+        <Button id='bt' size="small" onnClick={handleApply}>Apply Now</Button>
       </CardActions>
     </Card>
 

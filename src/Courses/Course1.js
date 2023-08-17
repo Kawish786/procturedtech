@@ -32,7 +32,7 @@ function Course1() {
         Financial Accounting
         </Typography>
         <Typography className='typo' id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography className='typo' id='typo' variant="body2">
           well meaning and kindly.
@@ -53,7 +53,7 @@ function Course1() {
         Managerial Accounting
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -76,7 +76,7 @@ function Course1() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -99,7 +99,7 @@ function Course1() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -122,7 +122,7 @@ function Course1() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
@@ -145,7 +145,7 @@ function Course1() {
 
         </Typography>
         <Typography id='typo' sx={{ mb: 1.5 }} color="text.secondary">
-          View Course
+          Get Course
         </Typography>
         <Typography id='typo' variant="body2">
           well meaning and kindly.
