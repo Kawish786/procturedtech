@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Nav.css'
 import { useNavigate } from 'react-router-dom'
 import { LogIn } from 'lucide-react'
