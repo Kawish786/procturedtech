@@ -10,6 +10,8 @@ import { AlignJustify } from 'lucide-react'
 
 function Nav() {
   const nav =useNavigate()
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
+
   const handleHome=()=>{
     nav('/')
   }
@@ -22,6 +24,9 @@ function Nav() {
   const handleAbout=()=>{
     nav('/about')
   }
+  const toggleMobileMenu = () => {
+    setIsMobileMenuActive(!isMobileMenuActive);
+  };
   return (
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
