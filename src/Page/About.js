@@ -37,7 +37,7 @@ function About() {
 </div>
 </div>
     <div>
-        <h4 className='head'>About Supreme</h4>
+        <h4 className='head'>About EdTech</h4>
         <p style={{color:'salmon'}}><label>EdTech,</label> started in 2023, is a world most trusted online platform & certification in India, specializing in Certification, Courses & Degree, 40% for oversea Students.</p>
     </div>
     </>
