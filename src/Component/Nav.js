@@ -25,8 +25,9 @@ function Nav() {
   return (
     <div className='navbar'>
         <h2 onClick={handleHome}>EdTech</h2>
-        <div className='navpart'>
-            <ul>
+        <button className='navbar-toggler bg-primary' type='button' data-bs-toggle='collapse' data-bs-target='#collapsibleNavbar'><AlignJustify/></button>
+        <div className='navpart collapse navbar-collapse' id='collapsibleNavbar'>
+            <ul >
                 <li onClick={handleHome}><Home /> Home</li>
                 <li onClick={handleCourse}><GraduationCap /> Courses</li>
                 <li onClick={handleAbout}><MessagesSquare /> About</li>
